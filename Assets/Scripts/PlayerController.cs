@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -11,9 +12,18 @@ public class PlayerController : MonoBehaviour
     public float salto = 50f;
     public float velocidad = 5f;
     public float velocidadRotacion = 3f;
+
+    private string nombreArchivo = "basedatos.txt";
+    private string contenidoArchivo = "Puntuacion";
+
+
     void Start()
     {
-        controlador = gameObject.GetComponent<CharacterController>();   
+        controlador = gameObject.GetComponent<CharacterController>();
+
+        //Guardar archivo plano en la carpeta Assets
+        string rutaCompleta = Path.Combine(Application.dataPath, nombreArchivo);
+        File.WriteAllText(rutaCompleta, contenidoArchivo);
     }
 
     // Update is called once per frame
