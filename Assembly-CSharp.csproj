@@ -57,11 +57,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\LineaSalida.cs" />
     <Compile Include="Assets\Scripts\ControlBola.cs" />
     <Compile Include="Assets\Scripts\ControlCamara.cs" />
+    <Compile Include="Assets\Scripts\LineaPartida.cs" />
+    <Compile Include="Assets\Scripts\SeleccionarOpciones.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BEDRILL\Modular_Track_Free\Readme.txt" />
+    <None Include="Assets\basedatos.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
